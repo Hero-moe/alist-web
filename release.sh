@@ -6,7 +6,9 @@ cat package.json
 
 # build
 pnpm install
-pnpm i18n:release
++wget https://crowdin.com/backend/download/project/alist/zh-CN.zip 
++unzip zh-CN.zip 
++node ./scripts/i18n.mjs
 pnpm build
 cp -r dist ../
 cd ..
